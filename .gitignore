@@ -1,0 +1,12 @@
+/docs/
+/lib/
+/bin/
+/.shards/
+*.dwarf
+.env
+.env.test
+.idea
+
+\.travis\.yml
+
+
