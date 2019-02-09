@@ -8,6 +8,7 @@ if(window.location.pathname==="/chat") {
     let socket = new Amber.Socket('/chat');
     let submit_chat = document.querySelector("#chatbox-form-submit")
     let message_chat = document.querySelector("#chatbox-message")
+    let chatboxView = document.getElementById("chatbox-view")
 
     socket.connect().then(function () {
         let channel = socket.channel('chat_room:hello');
@@ -28,6 +29,9 @@ if(window.location.pathname==="/chat") {
 
         channel.on('message_new', function (payload) {
             console.log("BC:", payload);
+            let message = document.createElement("p")
+            message.innerHTML=payload.message
+            chatboxView.appendChild(message)
         });
     });
 

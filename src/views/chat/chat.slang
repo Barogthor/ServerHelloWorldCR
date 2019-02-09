@@ -1,7 +1,7 @@
 .row.justify-content-center
   .col-sm-12.col-md-6
     h2 = t "crystal_chatbox"
-    div.chatbox-render
+    div.chatbox-view id="chatbox-view"
     form.chatbox-form
       div.form-row.align-items-center
         div.col-12
