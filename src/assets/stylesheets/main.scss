@@ -1,0 +1,16 @@
+$primary: #f4994b;
+
+@import '~bootstrap/scss/bootstrap';
+
+.main {
+  padding-top: 20px;
+}
+
+.chatbox-render{
+  box-shadow: black 0px 0px 8px;
+  min-height: 200px;
+}
+
+.chatbox-form{
+  margin-top: 1rem;
+}

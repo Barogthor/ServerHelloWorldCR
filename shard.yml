@@ -1,32 +1,50 @@
-name: la-pelle-loose
+name: hello_world
 version: 0.1.0
 
+authors:
+  - your-name-here <your-email-here>
+
+crystal: 0.27.0
+
+license: UNLICENSED
+
 targets:
-  server-hello-world:
-    main: src/server-hello-world.cr
+  hello_world:
+    main: src/hello_world.cr
 
-crystal: 0.26.1
-
-license: MIT
+  amber:
+    main: lib/amber/src/amber/cli.cr
 
 dependencies:
-  kemal:
-    github: kemalcr/kemal
-
-  spec-kemal:
-    github: kemalcr/spec-kemal
-    branch: master
-
-    
+  amber:
+    github: amberframework/amber
+    version: 0.11.3
+    #branch: master
 
   granite:
     github: amberframework/granite
+    version: ~> 0.15.0
 
-  micrate:
-    github: juanedi/micrate
+  quartz_mailer:
+    github: amberframework/quartz-mailer
+    version: ~> 0.5.1
+
+  jasper_helpers:
+    github: amberframework/jasper-helpers
+    version: ~> 0.2.1
 
   pg:
     github: will/crystal-pg
+    version: ~> 0.15.0
 
-  dotenv:
-    github: gdotdesign/cr-dotenv
+  citrine-i18n:
+    github: amberframework/citrine-i18n
+    version: 0.3.2
+
+  orchestrator:
+    github: alex-lairan/orchestrator
+
+development_dependencies:
+  garnet_spec:
+    github: amberframework/garnet-spec
+    version: ~> 0.2.1
