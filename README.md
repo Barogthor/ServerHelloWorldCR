@@ -1,4 +1,4 @@
-# hello_world
+# Try a Web Server with crystal
 
 [![Amber Framework](https://img.shields.io/badge/using-amber_framework-orange.svg)](https://amberframework.org)
 
